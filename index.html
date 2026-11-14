@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choyxona</title>
+  <style>
+    body { font-family: sans-serif; max-width: 480px; margin: 40px auto; padding: 0 16px; }
+    ul { padding-left: 20px; line-height: 1.8; }
+    button { padding: 10px 18px; font-size: 16px; margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <h1>Choyxona</h1>
+  <p>Har kuni 9:00 dan 23:00 gacha ochiqmiz.</p>
+  <h2>Menyu</h2>
+  <ul id="menyu">
+    <li>Osh</li>
+    <li>Lag'mon</li>
+    <li>Ko'k choy</li>
+  </ul>
+  <button id="buyurtma">Buyurtma berish</button>
+  <p id="xabar"></p>
+  <script>
+    document.getElementById('buyurtma').addEventListener('click', function () {
+      document.getElementById('xabar').textContent = 'Buyurtmangiz qabul qilindi!';
+    });
+  </script>
+</body>
+</html>
